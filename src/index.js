@@ -1,3 +1,6 @@
-module.exports = function solveEquation(equation) {
-  // your implementation
+const Equation = require('./equation');
+
+module.exports = function solveEquation(equation) {  
+  var equation = new Equation(equation);
+  return equation.toArray();
 }
